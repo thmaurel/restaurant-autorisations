@@ -1,0 +1,6 @@
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+
+<% if policy(@restaurant).edit? %>
+  <%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
+<% end %>
