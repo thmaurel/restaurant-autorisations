@@ -3,5 +3,6 @@
 <%= simple_form_for @restaurant do |f| %>
   <%= f.input :name %>
   <%= f.input :address %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>
